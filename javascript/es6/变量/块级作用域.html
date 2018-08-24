@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>变量</title>
+  <style>
+    ul {
+      display: flex;
+    }
+
+    li {
+      width: 100px;
+      height: 100px;
+      background: paleturquoise;
+      margin: 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  <script>
+    // 点击li,弹出li的序号
+
+    const li = document.getElementsByTagName('li');
+    const lis = Array.from(li);
+
+    // es 6做法
+    // let 声明为块级作用域
+    for (let i = 0; i < lis.length; i++) {
+      lis[i].onclick = function () {
+        alert(i)
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
