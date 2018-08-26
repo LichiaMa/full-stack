@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jsonp</title>
+</head>
+
+<body>
+  <input type="text" id="input">
+  <ul id="ul"></ul>
+  <script>
+    const ul = document.getElementById('ul');
+    function jsonp(data) {
+      ul.innerHTML = '';
+      if (!data || !data.g) return
+      data.g.forEach(element => {
+        const text = element.q;
+        const li = document.createElement('li');
+        li.innerText = text;
+
+        ul.appendChild(li)
+      });
+    }
+
+    const input = document.getElementById('input');
+    input.oninput = function (e) {
+      const value = encodeURIComponent(input.value);
+      const script = document.createElement('script');
+      script.src = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${value}&cb=jsonp&json=1&p=3&sid=1444_21081_26350_20927&req=2&csor=1`
+      document.head.appendChild(script);
+    }
+  </script>
+</body>
+
+</html>

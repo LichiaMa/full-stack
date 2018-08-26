@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>reduce</title >
+</head>
+
+<body>
+  <script>
+    // 求平均值
+    const arr = [1, 2, 3, 4];
+    const arv = arr.reduce((tmp, item, index) => {
+      if (index === arr.length - 1) {  // 当循环到最后一个元素返回平均值
+        return (tmp + item) / arr.length
+      } else {
+        return tmp + item  // 如果不是最后一个元素，则返回和
+      }
+    })
+
+    console.log(arv) // 2.5
+  </script>
+</body>
+
+</html>

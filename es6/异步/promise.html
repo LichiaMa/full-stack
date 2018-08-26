@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>promise sleep</title>
+</head>
+
+<body>
+  <script>
+    const promise = new Promise((resolve, reject) => {
+      if (3 > 1) {
+        resolve(true)
+      } else {
+        reject(false)
+      }
+    }).then(data => console.log(data))
+      .catch(err => console.log(err))
+  </script>
+</body>
+
+</html>
