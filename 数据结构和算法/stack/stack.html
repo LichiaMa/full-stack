@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stack</title>
+  <script src="./stack.js"></script>
+  <script src="./bhdConvert.js"></script>
+</head>
+
+<body>
+  <h1>利用栈实现10进制到2进制的转换</h1>
+  十进制： <input type="text" id="num">
+  <br> 二进制： <span id="bin"></span>
+  <br> 八进制： <span id="oct"></span>
+  <br> 十六进制： <span id="hex"></span>
+  <script>
+
+    const input = document.getElementById('num');
+    const oBin = document.getElementById('bin');
+    const oOct = document.getElementById('oct');
+    const oHex = document.getElementById('hex');
+
+    input.oninput = function () {
+      const dec = input.value;
+
+      const bin = BHDConvert(dec, 2);
+      const oct = BHDConvert(dec, 8);
+      const hex = BHDConvert(dec, 16);
+      oBin.innerText = bin;
+      oOct.innerText = oct;
+      oHex.innerText = hex;
+    }
+  </script>
+</body>
+
+</html>
