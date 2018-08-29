@@ -1,0 +1,19 @@
+{
+  "name": "full-stack",
+  "version": "1.0.0",
+  "description": "Keep full-stack learning record",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LichiaMa/full-stack.git"
+  },
+  "author": "Lichia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LichiaMa/full-stack/issues"
+  },
+  "homepage": "https://github.com/LichiaMa/full-stack#readme"
+}
