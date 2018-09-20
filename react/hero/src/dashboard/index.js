@@ -21,7 +21,8 @@ class Dashboard extends Component {
                         key={hero.id}
                         className={styles.item}
                         to={{
-                         pathname:`/detail/${hero.id}`
+                         pathname:`/detail/${hero.id}`,
+                         state: {name:hero.name}
                         }}>
                         {hero.name}
                       </Link>

@@ -1,0 +1,28 @@
+.item {
+  padding: 10px;
+  color: #666;
+}
+
+.label {
+  padding-right: 10px;
+  color: #8B9DA8;
+}
+
+.input {
+  padding: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background: #eee;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #607d8b;
+  color: #fff;
+}

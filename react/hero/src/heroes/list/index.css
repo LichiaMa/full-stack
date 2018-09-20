@@ -4,5 +4,44 @@
 
 .item {
   display: flex;
-  width: 120px;
+  justify-content: space-between;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  background: #eee;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  transition: all .2s linear;
+  text-decoration: none;
+  color: #666;
+}
+
+.item:hover {
+  background: #D0D8DC;
+  color: #fff;
+  transform: translateX(10px);
+}
+
+.id {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #647C8A;
+  color: #fff;
+  border-radius: 3px 0 0 3px;
+}
+
+.text {
+  flex: 1;
+  padding: 0 25px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #999;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
 }
