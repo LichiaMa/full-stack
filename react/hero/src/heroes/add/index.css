@@ -1,0 +1,21 @@
+.label {
+  padding-right: 10px;
+}
+
+.input {
+  padding: 5px;
+}
+
+.btn {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px 20px;
+  border-radius: 2px;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #607d8b;
+  color: #fff;
+}
